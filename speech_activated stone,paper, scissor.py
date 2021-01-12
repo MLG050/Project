@@ -31,7 +31,7 @@ def takeCommand(): #take our command
         return "None"
     return query #our command
 
-a=["stone","paper","scissor"] 
+a=["stone","paper","caesar"] 
 # Initilize
 count=6
 me=0
@@ -57,13 +57,13 @@ for i in range(count):
                 pc+=1  #if pc win increase pc score
                
 
-        elif c=="scissor":
+        elif c=="caesar":
             speak(" This time YOU  win")
             if "This time YOU  win":
                 me+=1   #if i win increase my score
 
     elif b=="paper":
-        if c=="scissor":
+        if c=="caesar":
             speak("This time I win")
             if "This time I win":
                 pc += 1
@@ -72,7 +72,7 @@ for i in range(count):
             if "This time YOU win":
                 me += 1
 
-    elif b=="scissor":
+    elif b=="caesar":
         if c=="stone":
             speak("This time I win")
             if "This time I win":
