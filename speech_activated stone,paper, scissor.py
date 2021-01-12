@@ -1,5 +1,5 @@
-import pyttsx3 #Speech to text
-import speech_recognition as sr  
+import pyttsx3 #text to speech
+import speech_recognition as sr  #for recognizing our speech
 import random
 
 engine=pyttsx3.init('sapi5')
@@ -31,7 +31,7 @@ def takeCommand(): #take our command
         return "None"
     return query #our command
 
-a=["stone","paper","caesar"] 
+a=["stone","paper","caesar"] #recognize_google not recognizing scissor word instead of scissor recognizing caesor.
 # Initilize
 count=6
 me=0
